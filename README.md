@@ -1,6 +1,16 @@
 # Android-Room-Database-with-Singleton-And-Typeconverter
 
 
+**_Testing-Singleton_**
+
+Instance of database & database2 are same
+i.e database: ContactDatabase_Impl@9852  & database2: ContactDatabase_Impl@9852
+
+![Screenshot (17)](https://user-images.githubusercontent.com/47368515/161760789-9611884c-ddd1-4979-8697-874db40b2d03.png)
+
+
+
+
 
 1.Singleton class is a class that is defined in such a way that only one instance of the class can be created and used everywhere. 
 Many times we create the two different objects of the same class, 
@@ -30,11 +40,4 @@ BLOBs are used primarily to hold multimedia objects like images, videos, and sou
 e.g we want to store the date obj so we have to use Type convertor
 
 
-
-**_Testing-Singleton_**
-
-Instance of database & database2 are same
-i.e database: ContactDatabase_Impl@9852  & database2: ContactDatabase_Impl@9852
-
-![Screenshot (17)](https://user-images.githubusercontent.com/47368515/161760789-9611884c-ddd1-4979-8697-874db40b2d03.png)
 
