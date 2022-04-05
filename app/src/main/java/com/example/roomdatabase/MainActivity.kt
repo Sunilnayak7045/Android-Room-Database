@@ -8,6 +8,7 @@ import androidx.lifecycle.Observer
 import androidx.room.Room
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,18 +18,22 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
+        // Initial code //
         // It will return a db object
-        database= Room.databaseBuilder(
-            applicationContext,
-            ContactDatabase::class.java,
-            "contactName"
-        ).build()
+         //database= Room.databaseBuilder(applicationContext, ContactDatabase::class.java, "contactName")
+          //  .build()
         // contactName is the name of db
+
+        database = ContactDatabase.getDatabase(this)
+
+        //testing
+        // instance of database & database2 should be same refer to image present in readme.
+        val database2 = ContactDatabase.getDatabase(this)
 
         GlobalScope.launch {
 
             // instance of db
-            database.contact_db_fun().insertContact(ContactDataClass(0,"Sunil","8454890942"))
+            database.contact_db_fun().insertContact(ContactDataClass(0,"Sunil","8454890942", Date()))
         }
     }
 
