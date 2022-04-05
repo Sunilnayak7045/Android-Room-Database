@@ -34,6 +34,7 @@ e.g we want to store the date obj so we have to use Type convertor
 **_Testing-Singleton_**
 
 Instance of database & database2 are same
+i.e database: ContactDatabase_Impl@9852  & database2: ContactDatabase_Impl@9852
 
 ![Screenshot (17)](https://user-images.githubusercontent.com/47368515/161760789-9611884c-ddd1-4979-8697-874db40b2d03.png)
 
