@@ -15,9 +15,13 @@ so we use locking mechanism i.e synchronized block
 4.Type convertors:
 SQLite only supports:
 1.null
+
 2.integer
+
 3.real
+
 4.text
+
 5.blob (BLOB stands for Binary Large Object. It is defined as the chunk of binary data being stored as a single entity in a database system. 
 BLOBs are used primarily to hold multimedia objects like images, videos, and sound, though they can also be used to store programs)
 
