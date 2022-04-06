@@ -12,6 +12,7 @@ data class ContactDataClass(
     val id: Long,
     val name: String,
     val phone: String,
-    val createdDate : Date
+    val createdDate : Date,
+    val isActive: Int //can't use boolean because we can't store boolean in sqlite
 
 )

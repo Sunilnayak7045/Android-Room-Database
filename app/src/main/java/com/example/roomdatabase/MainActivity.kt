@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         GlobalScope.launch {
 
             // instance of db
-            database.contact_db_fun().insertContact(ContactDataClass(0,"Sunil","8454890942", Date()))
+            database.contact_db_fun().insertContact(ContactDataClass(0,"Sunil","8454890942", Date(),1))
         }
     }
 
